@@ -1,6 +1,6 @@
 # Sense-cards ↔ Vault 薄 playbook 對照
 
-防雙源漂移。**Runtime 真源＝本 skill 樹**；vault 供人讀／週一雙軌改善後再回寫 skill。
+防漂移。**Runtime 真源＝本 skill 樹**；vault 供人讀／週一對齊改善後再回寫 skill（vault 只跟隨，非平行真源）。
 
 | sense-cards（skill） | Vault PB 卡 | 職責（方法層） |
 |---|---|---|

@@ -24,8 +24,8 @@
 
 ## 死路怎麼標
 
-- 公開盤齊、但無合法身分路徑且指揮未批重建 → `DEAD:no-session-path`（等批重註冊／重登，不硬猜）。
-- 有 session、認證後只讀無新可證偽假設 → `DEAD:auth-readonly-exhausted`，HANDOFF 請批下一窄目標，不自開利用。
+- 公開盤齊、但無合法身分路徑且指揮未批重建 → `DEAD:no-identity`（等批重註冊／重登，不硬猜）。
+- 有 session、認證後只讀無新可證偽假設 → `DEAD:no-consumer`，HANDOFF 請批下一窄目標，不自開利用。
 
 ## 禁
 

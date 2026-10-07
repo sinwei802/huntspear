@@ -34,7 +34,7 @@
 - 無本場 finding 却用題名／記憶補鏈 → `DEAD:hypothesis-mismatch` 並 REJECT。
 - 有 finding 但只能靠利用菜譜前進 → `GAP:no-local-playbook`，只准補卡／查公開概念，不准 exploit。
 - 偽造成功（準則未 verified）→ `DEAD:hypothesis-mismatch`；回上一 stage。
-- 方法論破口（payload／PoC／writeup）→ `DEAD:methodology-breach`。
+- 方法論破口（payload／PoC／writeup）→ `DEAD:doctrine-incompatible`。
 
 ## 去哪查
 
