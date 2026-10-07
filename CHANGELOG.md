@@ -1,3 +1,8 @@
+## 2026-10-07 — 用語／死路標分類清理（產線暫停中）
+
+- 刪「雙軌／dual-track」語彙：skill＝戰鬥 runtime 真源，vault 只對齊跟隨（非平行真源）。歷史標題「週一雙軌維護」改為「週一對齊 skill」；`local-sense`／`sense-vault-map` 同步。
+- `dead-path-mark`：清點 c85a914 一次新加的 7 標——Lab-M（run-005）實際用過 `doctrine-incompatible`／`platform-deny`（保留）。其餘 5 標併回既有 DEAD／GAP（見該卡），並改相位卡引用。無 payload／PoC。
+
 ## 2026-09-29 — 本機 warboard 網頁
 
 - `scripts/warboard_console.py`、`console/board.html`：預設只聽 `127.0.0.1:8765`，讀 `warboard.sqlite`。主機／服務表、態勢、賭注、事件依回合摺疊。
@@ -12,7 +17,7 @@
 - SKILL 補 R6。`load_state_bundle.py`／`checkpoint_write.py` 降為考古（單元測試仍可跑）。
 - 無 payload／PoC。
 
-## 2026-09-28 — 週一雙軌維護（vault 對齊＋雲端增源）
+## 2026-09-28 — 週一對齊 skill（vault 跟隨＋雲端增源）
 
 - vault `資安/HuntSpear 薄 playbook` 與 sense-cards 漂移收斂（skill 為戰鬥真源）：提權分流第三態、禁 PoC 交叉段、主人尺／Web 階梯／复盤用語去內部場次標。
 - `dead-path-mark`：補齊 `doctrine-incompatible`／`platform-deny`／session／advisory 類標記（方法層，無利用步驟）。

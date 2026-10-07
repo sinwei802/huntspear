@@ -2,8 +2,6 @@
 
 > **繁中**：死路標註：何時把假設標死、避免重複撞牆（方法門；無利用步驟）。
 
-
-
 ## 何時用
 
 - 假設落空、範圍越權、資訊面耗盡、或證據門長期不開時。
@@ -28,13 +26,20 @@
 | `DEAD:no-consumer` | 動作面無消費者／無副作用證據 |
 | `GAP:version-unknown` | 缺產品版本，不准瞎猜 CVE |
 | `GAP:no-local-playbook` | 本地無卡可載，需補卡或公開查法，不硬猜 |
-| `DEAD:doctrine-incompatible` | 禁 PoC 編制下無 misconfig 可續面（見 doctrine-compatible-privesc） |
-| `DEAD:platform-deny` | 面相容但指揮／平台拒批利用類動作（勿與上列混稱） |
-| `DEAD:no-session-path` | 公開盤齊但無合法身分路徑且未獲重建批 |
-| `DEAD:auth-readonly-exhausted` | 認證後只讀耗盡，需另批窄目標 |
-| `DEAD:methodology-breach` | 方法論破口（payload／PoC／writeup 當主源） |
-| `DEAD:cve-version-mismatch` | CVE 命中但版本不合 |
-| `DEAD:advisory-only` | 僅有公告、無授權／無驗證計畫 |
+| `DEAD:doctrine-incompatible` | 禁 PoC 編制下無 misconfig 可續面（見 doctrine-compatible-privesc）｜**Lab-M 用過** |
+| `DEAD:platform-deny` | 面相容但指揮／平台拒批利用類動作（勿與上列混稱）｜**Lab-M 用過** |
+
+### 2026-10-07 併回（c85a914 一次新加、Lab-M 未用）
+
+| 舊標（停用為主標） | 併入 | 理由 |
+|---|---|---|
+| `DEAD:no-session-path` | `DEAD:no-identity` | 無合法身分／重建路徑＝身分來源缺口 |
+| `DEAD:auth-readonly-exhausted` | `DEAD:no-consumer` | 認證後只讀耗盡＝當前動作面無新消費者 |
+| `DEAD:methodology-breach` | `DEAD:doctrine-incompatible` | 以 payload／PoC／writeup 當主源＝編制不相容 |
+| `DEAD:cve-version-mismatch` | `GAP:version-unknown` | 版本不合／未知，皆禁止瞎猜 CVE 動作 |
+| `DEAD:advisory-only` | `DEAD:no-consumer` | 僅公告、無可驗證動作面 |
+
+舊標若出現在歷史 warlog，讀作上表併入標即可；新場勿再新寫舊標。
 
 每筆至少一行：`標記｜關閉的假設｜關鍵觀測｜重開條件或「不重開」`。
 
